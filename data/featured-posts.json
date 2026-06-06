@@ -1,5 +1,77 @@
 [
   {
+    "id": 110,
+    "title": "Brasília é referência em odontologia? Descubra os diferenciais locais",
+    "slug": "/brasilia-referencia-odontologia",
+    "url": "https://ablac.com.br/brasilia-referencia-odontologia/",
+    "date": "",
+    "category": "Saúde Bucal",
+    "excerpt": "Entenda por que Brasília é referência em odontologia e descubra os diferenciais que atraem quem busca excelência e inovação em saúde bucal.",
+    "cover_image": "/img/pexels-photo-5622026.jpeg",
+    "cover_image_alt": "Brasília é referência em odontologia? Descubra os diferenciais locais",
+    "author": "Roberto Braga"
+  },
+  {
+    "id": 109,
+    "title": "Dicas para encontrar um bom psiquiatra em Balsas",
+    "slug": "/dicas-psiquiatra-balsas",
+    "url": "https://ablac.com.br/dicas-psiquiatra-balsas/",
+    "date": "",
+    "category": "Saúde Mental",
+    "excerpt": "Veja dicas práticas para encontrar o psiquiatra ideal em Balsas e garanta um tratamento acolhedor e eficaz para sua saúde mental.",
+    "cover_image": "/img/pexels-photo-5700150.jpeg",
+    "cover_image_alt": "Dicas para encontrar um bom psiquiatra em Balsas",
+    "author": "Roberto Braga"
+  },
+  {
+    "id": 108,
+    "title": "Primeira consulta com psiquiatra em Manaus: o que esperar?",
+    "slug": "/primeira-consulta-psiquiatra-manaus",
+    "url": "https://ablac.com.br/primeira-consulta-psiquiatra-manaus/",
+    "date": "",
+    "category": "Saúde Mental",
+    "excerpt": "Saiba como é a primeira consulta com psiquiatra em Manaus, tire suas dúvidas e descubra dicas para um atendimento acolhedor e eficaz na sua saúde mental.",
+    "cover_image": "/img/pexels-photo-7447058.jpeg",
+    "cover_image_alt": "Primeira consulta com psiquiatra em Manaus: o que esperar?",
+    "author": "Roberto Braga"
+  },
+  {
+    "id": 107,
+    "title": "Cuidados com a pele no clima de São Paulo",
+    "slug": "/cuidados-pele-clima-sao-paulo",
+    "url": "https://ablac.com.br/cuidados-pele-clima-sao-paulo/",
+    "date": "",
+    "category": "Bem Estar",
+    "excerpt": "Veja como proteger sua pele das variações de clima, poluição e ar seco em São Paulo. Aprenda dicas e rotinas para garantir uma aparência saudável o ano todo.",
+    "cover_image": "/img/pexels-photo-4586740.jpeg",
+    "cover_image_alt": "Cuidados com a pele no clima de São Paulo",
+    "author": "Roberto Braga"
+  },
+  {
+    "id": 106,
+    "title": "Implantes dentários em São Paulo: vale a pena?",
+    "slug": "/implantes-dentarios-sao-paulo",
+    "url": "https://ablac.com.br/implantes-dentarios-sao-paulo/",
+    "date": "",
+    "category": "Saúde Bucal",
+    "excerpt": "Saiba se implantes dentários em São Paulo valem a pena, vantagens, custos e dicas para escolher o melhor profissional. Transforme seu sorriso com segurança!",
+    "cover_image": "/img/pexels-photo-6627330.jpeg",
+    "cover_image_alt": "Implantes dentários em São Paulo: vale a pena?",
+    "author": "Roberto Braga"
+  },
+  {
+    "id": 105,
+    "title": "Ortodontia em Moema: quando é hora de procurar um especialista?",
+    "slug": "/ortodontia-moema-quando-procurar-especialista",
+    "url": "https://ablac.com.br/ortodontia-moema-quando-procurar-especialista/",
+    "date": "",
+    "category": "Saúde Bucal",
+    "excerpt": "Saiba identificar o momento certo para procurar ortodontia em Moema e descubra como o tratamento pode transformar seu sorriso e saúde bucal.",
+    "cover_image": "/img/pexels-photo-8413334.jpeg",
+    "cover_image_alt": "Ortodontia em Moema: quando é hora de procurar um especialista?",
+    "author": "Roberto Braga"
+  },
+  {
     "id": 104,
     "title": "Quem pode aplicar botox? Entenda a regulamentação e como funciona em Curitiba",
     "slug": "/quem-pode-aplicar-botox-curitiba",
