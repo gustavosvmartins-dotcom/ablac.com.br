@@ -1,5 +1,77 @@
 [
   {
+    "id": 116,
+    "title": "Cirurgia plástica em São Paulo: tendências para os próximos anos",
+    "slug": "/cirurgia-plastica-sao-paulo-tendencias",
+    "url": "https://ablac.com.br/cirurgia-plastica-sao-paulo-tendencias/",
+    "date": "",
+    "category": "Fitness",
+    "excerpt": "Conheça as tendências que vão transformar a cirurgia plástica em São Paulo nos próximos anos e descubra como escolher o melhor especialista para você.",
+    "cover_image": "/img/pexels-photo-4769133.jpeg",
+    "cover_image_alt": "Cirurgia plástica em São Paulo: tendências para os próximos anos",
+    "author": "Roberto Braga"
+  },
+  {
+    "id": 115,
+    "title": "Quanto tempo demora para aparecer o resultado do botox?",
+    "slug": "/quanto-tempo-resultado-botox",
+    "url": "https://ablac.com.br/quanto-tempo-resultado-botox/",
+    "date": "",
+    "category": "Bem Estar",
+    "excerpt": "Saiba em quantos dias o botox começa a fazer efeito, o que interfere nos resultados e como garantir um aspecto rejuvenescido com dicas práticas e seguras.",
+    "cover_image": "/img/pexels-photo-3985310.jpeg",
+    "cover_image_alt": "Quanto tempo demora para aparecer o resultado do botox?",
+    "author": "Roberto Braga"
+  },
+  {
+    "id": 114,
+    "title": "Como escolher um profissional qualificado para aplicar botox",
+    "slug": "/como-escolher-profissional-botox",
+    "url": "https://ablac.com.br/como-escolher-profissional-botox/",
+    "date": "",
+    "category": "Notícias",
+    "excerpt": "Aprenda os principais critérios para escolher um profissional de botox confiável e obtenha resultados estéticos seguros e naturais. Decida com confiança!",
+    "cover_image": "/img/pexels-photo-3985316.jpeg",
+    "cover_image_alt": "Como escolher um profissional qualificado para aplicar botox",
+    "author": "Roberto Braga"
+  },
+  {
+    "id": 113,
+    "title": "Como saber se o botox foi bem aplicado?",
+    "slug": "/como-saber-botox-bem-aplicado",
+    "url": "https://ablac.com.br/como-saber-botox-bem-aplicado/",
+    "date": "",
+    "category": "Notícias",
+    "excerpt": "Saiba como identificar se o botox foi bem aplicado e descubra dicas para garantir resultados naturais e seguros. Confira os sinais essenciais do sucesso!",
+    "cover_image": "/img/pexels-photo-14438369.jpeg",
+    "cover_image_alt": "Como saber se o botox foi bem aplicado?",
+    "author": "Roberto Braga"
+  },
+  {
+    "id": 112,
+    "title": "Como a terapia pode melhorar sua qualidade de vida em São José dos Campos?",
+    "slug": "/terapia-qualidade-vida-sao-jose-dos-campos",
+    "url": "https://ablac.com.br/terapia-qualidade-vida-sao-jose-dos-campos/",
+    "date": "",
+    "category": "Saúde Mental",
+    "excerpt": "Veja como a terapia pode transformar sua qualidade de vida em São José dos Campos, trazer mais equilíbrio emocional e inspirar mudanças positivas no seu dia a dia.",
+    "cover_image": "/img/pexels-photo-6712671.jpeg",
+    "cover_image_alt": "Como a terapia pode melhorar sua qualidade de vida em São José dos Campos?",
+    "author": "Roberto Braga"
+  },
+  {
+    "id": 111,
+    "title": "Taguatinga é referência em estética dental? Descubra mais",
+    "slug": "/taguatinga-referencia-estetica-dental",
+    "url": "https://ablac.com.br/taguatinga-referencia-estetica-dental/",
+    "date": "",
+    "category": "Saúde Bucal",
+    "excerpt": "Taguatinga se destaca em estética dental com clínicas modernas, profissionais renomados e alta tecnologia. Descubra o que faz a região ser referência no DF.",
+    "cover_image": "/img/pexels-photo-5355833.jpeg",
+    "cover_image_alt": "Taguatinga é referência em estética dental? Descubra mais",
+    "author": "Roberto Braga"
+  },
+  {
     "id": 110,
     "title": "Brasília é referência em odontologia? Descubra os diferenciais locais",
     "slug": "/brasilia-referencia-odontologia",
