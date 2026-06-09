@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ortodontia para adultos: principais dúvidas respondidas</title>
+  <meta name="description" content="Ortodontia para adultos esclarece dúvidas, tipos de aparelhos e benefícios. Descubra como alinhar seu sorriso e melhore sua autoestima. Confira!" />
+  <link rel="stylesheet" href="/css/blog-theme.css" />
+  <style>
+    .container {
+      width: min(100% - 32px, 1120px);
+      margin: 0 auto;
+    }
+
+    .blog-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .blog-header__top {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .blog-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .blog-logo__image {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    .blog-main-nav {
+      display: none;
+    }
+
+    /* NAV DROPDOWN */
+    .blog-nav-dropdown { position: relative; }
+    .dropdown-toggle {
+      display: flex; align-items: center; gap: 4px;
+      color: #3d3d3d; font-size: 14px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.5px;
+      background: none; border: none; cursor: pointer;
+      padding: 0; font-family: inherit;
+    }
+    .dropdown-toggle:hover { color: #36b1df; }
+    .dropdown-toggle::after { content: "▾"; font-size: 12px; transition: transform 0.2s ease; }
+    .dropdown-toggle.active::after { transform: rotate(180deg); }
+    .dropdown-menu {
+      display: none; position: absolute; top: calc(100% + 12px); right: 0;
+      background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08); min-width: 200px; z-index: 100; overflow: hidden;
+    }
+    .dropdown-menu.open { display: block; }
+    .dropdown-menu a {
+      display: block; padding: 12px 16px; color: #3d3d3d;
+      font-size: 14px; font-weight: 500; text-transform: uppercase;
+      text-decoration: none; border-bottom: 1px solid #f0f0f0; transition: background 0.2s ease;
+    }
+    .dropdown-menu a:last-child { border-bottom: none; }
+    .dropdown-menu a:hover { background: #f5fbff; color: #36b1df; }
+
+    /* HAMBURGUER */
+    .blog-menu-toggle {
+      display: flex; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 4px;
+    }
+    .blog-menu-toggle span { display: block; width: 24px; height: 2px; background: #3d3d3d; border-radius: 2px; transition: all 0.3s ease; }
+    .blog-menu-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .blog-menu-toggle.active span:nth-child(2) { opacity: 0; }
+    .blog-menu-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* MOBILE MENU */
+    .blog-mobile-menu { display: none; flex-direction: column; background: #fff; border-top: 1px solid #e0e0e0; padding: 16px 0; }
+    .blog-mobile-menu.open { display: flex; }
+    .blog-mobile-menu a { padding: 12px 16px; color: #3d3d3d; font-size: 14px; font-weight: 600; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid #f0f0f0; }
+    .blog-mobile-menu a:last-child { border-bottom: none; }
+    .blog-mobile-menu a:hover { color: #36b1df; }
+
+    .blog-page {
+      padding: 24px 0 56px;
+    }
+
+    .breadcrumbs {
+      margin: 0 0 16px;
+      color: #7a7a7a;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .breadcrumbs a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 32px;
+    }
+
+    .post-article { min-width: 0; }
+
+    .article-badge { margin-bottom: 14px; }
+
+    .post-title {
+      color: #3d3d3d;
+      font-size: 34px;
+      line-height: 42px;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .post-excerpt {
+      color: #3d3d3d;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+
+    .post-meta {
+      color: #7a7a7a;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+    .post-cover {
+      margin-bottom: 24px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f5f5f5;
+    }
+
+    .post-cover img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .post-content { color: #3d3d3d; }
+
+    .post-content h1,
+    .post-content h2,
+    .post-content h3 {
+      color: #3d3d3d;
+      font-weight: 600;
+    }
+
+    .post-content h1 { font-size: 30px; line-height: 38px; margin: 0 0 18px; }
+    .post-content h2 { font-size: 26px; line-height: 34px; margin: 32px 0 14px; }
+    .post-content h3 { font-size: 22px; line-height: 30px; margin: 24px 0 12px; }
+
+    .post-content p,
+    .post-content li { font-size: 18px; line-height: 30px; }
+
+    .post-content p { margin-bottom: 18px; }
+    .post-content ul, .post-content ol { margin: 0 0 20px 22px; }
+    .post-content li { margin-bottom: 8px; }
+    .post-content a { color: #36b1df; text-decoration: underline; }
+    .post-content img { width: 100%; display: block; border-radius: 8px; margin: 24px 0; }
+    .post-content blockquote {
+      margin: 24px 0; padding: 16px 20px;
+      border-left: 4px solid #36b1df;
+      background: #f2f6f9; border-radius: 8px;
+    }
+
+    .post-footer {
+      margin-top: 32px; padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
+      color: #7a7a7a; font-size: 14px; line-height: 20px;
+    }
+
+    .content-inline-related {
+      margin: 28px 0 26px; padding-left: 14px;
+      border-left: 4px solid #e67e22;
+      font-size: 16px; line-height: 24px;
+    }
+
+    .content-inline-related-label { font-weight: 700; color: #3d3d3d; }
+    .content-inline-related-link { color: #e67e22; font-weight: 600; text-decoration: underline; }
+
+    .post-bottom {
+      margin-top: 36px; border-top: 1px solid #e0e0e0; padding-top: 24px;
+    }
+
+    .section-title {
+      color: #3d3d3d; font-size: 26px; line-height: 34px;
+      font-weight: 600; margin-bottom: 20px;
+    }
+
+    .bottom-list, .sidebar-list { list-style: none; margin: 0; padding: 0; }
+
+    .bottom-item, .sidebar-item {
+      padding: 16px 0; border-bottom: 1px solid #e0e0e0;
+    }
+
+    .bottom-item:first-child, .sidebar-item:first-child { padding-top: 0; }
+    .bottom-item:last-child, .sidebar-item:last-child { border-bottom: 0; padding-bottom: 0; }
+
+    .bottom-link, .sidebar-link {
+      display: block; color: #3d3d3d;
+      font-size: 18px; line-height: 26px;
+      font-weight: 600; text-decoration: none;
+    }
+
+    .bottom-meta, .sidebar-meta {
+      display: block; margin-top: 6px;
+      color: #7a7a7a; font-size: 13px; line-height: 18px;
+    }
+
+    .post-sidebar { min-width: 0; }
+
+    .sidebar-block {
+      position: sticky; top: 100px;
+      border-top: 1px solid #e0e0e0; padding-top: 20px;
+    }
+
+    .loading-text, .empty-text { color: #7a7a7a; font-size: 14px; line-height: 20px; }
+
+    #footer {
+      background: #ebf0f4; margin-top: 64px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    #footer .footer-tuasaude { padding: 40px 0 0; }
+
+    #footer .footer-wrapper {
+      display: grid; grid-template-columns: 1fr; gap: 24px;
+    }
+
+    .footer-logo {
+      display: inline-flex; align-items: center;
+      gap: 10px; text-decoration: none;
+    }
+
+    .footer-logo__image { height: 36px; width: auto; display: block; }
+
+    .footer-text { color: #3d3d3d; font-size: 14px; line-height: 22px; max-width: 640px; }
+
+    .footer-menu ul {
+      list-style: none; margin: 0; padding: 0;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+
+    .footer-menu ul li a { color: #3d3d3d; font-size: 14px; line-height: 20px; text-decoration: none; }
+
+    .footer-group { border-top: 1px solid #e0e0e0; margin-top: 8px; }
+
+    .footer-update-copy {
+      display: flex; flex-wrap: wrap; align-items: center;
+      gap: 10px; padding: 20px 0; color: #7a7a7a;
+      font-size: 12px; line-height: 16px;
+    }
+
+    .footer-update-copy .dot {
+      width: 4px; height: 4px; border-radius: 50%; background: #36b1df;
+    }
+
+    @media screen and (min-width: 1050px) {
+      .blog-main-nav {
+        display: flex; align-items: center; gap: 32px;
+        flex: 1; justify-content: center;
+      }
+
+      .blog-main-nav a {
+        color: #3d3d3d; text-decoration: none;
+        font-size: 14px; font-weight: 600;
+        text-transform: uppercase; letter-spacing: 0.5px;
+        transition: color 0.2s ease;
+      }
+
+      .blog-main-nav a:hover { color: #36b1df; }
+
+      .blog-menu-toggle { display: none; }
+      .blog-mobile-menu { display: none !important; }
+
+      .page-grid {
+        grid-template-columns: minmax(0, 1fr) 320px;
+        gap: 48px;
+      }
+
+      #footer .footer-wrapper {
+        grid-template-columns: 1.4fr 1fr 1fr;
+        align-items: start;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/webp" href="/img/favicon-medico.webp">
+  <link rel="shortcut icon" href="/img/favicon-medico.webp">
+  <link rel="apple-touch-icon" href="/img/favicon-medico.webp">
+  <meta name="google-site-verification" content="IMAi71_5b7qQqxm_pI2jClWA2QXoHIZ3v200aPZpSSU" />
+</head>
+<body>
+  <header class="blog-header">
+    <div class="container blog-header__top">
+      <a href="https://ablac.com.br" class="blog-logo">
+        <img src="/img/logo-blog.webp" alt="ABLAC" class="blog-logo__image">
+      </a>
+
+      <nav class="blog-main-nav">
+        <a href="/categoria/saude/">Saúde</a>
+        <a href="/categoria/bem-estar/">Bem-estar</a>
+        <a href="/categoria/noticias/">Notícias</a>
+        <div class="blog-nav-dropdown">
+          <button class="dropdown-toggle" onclick="toggleDropdown(this)">Mais</button>
+          <div class="dropdown-menu">
+            <a href="/categoria/doencas/">Doenças</a>
+            <a href="/categoria/saude-da-mulher/">Saúde da Mulher</a>
+            <a href="/categoria/saude-mental/">Saúde Mental</a>
+            <a href="/categoria/saude-bucal/">Saúde Bucal</a>
+            <a href="/categoria/nutricao/">Nutrição</a>
+            <a href="/categoria/fitness/">Fitness</a>
+          </div>
+        </div>
+      </nav>
+
+      <button class="blog-menu-toggle" onclick="toggleMobileMenu(this)" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="blog-mobile-menu">
+      <a href="/categoria/saude/">Saúde</a>
+      <a href="/categoria/bem-estar/">Bem-estar</a>
+      <a href="/categoria/noticias/">Notícias</a>
+      <a href="/categoria/doencas/">Doenças</a>
+      <a href="/categoria/saude-da-mulher/">Saúde da Mulher</a>
+      <a href="/categoria/saude-mental/">Saúde Mental</a>
+      <a href="/categoria/saude-bucal/">Saúde Bucal</a>
+      <a href="/categoria/nutricao/">Nutrição</a>
+      <a href="/categoria/fitness/">Fitness</a>
+    </div>
+  </header>
+
+  <script>
+    function toggleDropdown(btn) {
+      const menu = btn.nextElementSibling;
+      btn.classList.toggle('active');
+      menu.classList.toggle('open');
+      document.addEventListener('click', function closeMenu(e) {
+        if (!btn.parentElement.contains(e.target)) {
+          menu.classList.remove('open');
+          btn.classList.remove('active');
+          document.removeEventListener('click', closeMenu);
+        }
+      });
+    }
+
+    function toggleMobileMenu(btn) {
+      const menu = document.querySelector('.blog-mobile-menu');
+      btn.classList.toggle('active');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+  <main class="blog-page">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/">Início</a> / <a href="/categoria/saude-bucal/">Saúde Bucal</a>
+      </div>
+
+      <div class="page-grid">
+        <article class="post-article">
+          <div class="article-badge">Saúde Bucal</div>
+
+          <h1 class="post-title">Ortodontia para adultos: principais dúvidas respondidas</h1>
+
+          <p class="post-excerpt">Tire suas dúvidas sobre ortodontia para adultos, conheça tipos de aparelhos e descubra como alinhar os dentes pode transformar sua saúde e autoestima.</p>
+
+          <div class="post-meta">
+            4/9/2026 • por Roberto Braga
+          </div>
+
+          <div class="post-cover">
+            <img src="/img/pexels-photo-5938281.jpeg" alt="Ortodontia para adultos: principais dúvidas respondidas">
+          </div>
+
+          <div class="post-content">
+            
+
+<p>Você já pensou em cuidar do sorriso mesmo sendo adulto? Atualmente, é cada vez mais comum procurar tratamentos ortodônticos após os 30, 40 ou até mesmo 50 anos. Muitas pessoas acreditam que o uso de aparelho dentário é exclusivo para adolescentes, mas a ortodontia evoluiu bastante e oferece soluções eficientes para qualquer faixa etária.<br><br>Neste artigo, vamos esclarecer as principais dúvidas dos adultos interessados em alinhar os dentes, melhorar a mastigação e conquistar um sorriso mais bonito. Se você já pensou em iniciar esse tratamento, prepare-se para desmistificar medos, conhecer vantagens e entender os cuidados necessários para uma jornada ortodôntica tranquila e transformadora.</p>
+
+<h2>Por que optar pela Ortodontia na idade adulta?</h2>
+
+<p>Buscar alinhar os dentes na vida adulta pode transformar não só a estética do sorriso, mas também a qualidade de vida. Muitas vezes, problemas acumulados desde a infância podem gerar desconforto, dores de cabeça ou até desgastes nos dentes. Corrigir a posição dentária ajuda a evitar esses problemas e proporciona ganhos funcionais, como uma mastigação mais eficiente e até uma fala mais clara.<br><br>Além disso, realizar o tratamento ortodôntico motiva o autocuidado e pode influenciar positivamente outros hábitos de saúde bucal. Para quem deseja um atendimento especializado, encontrar um <a href="https://odontologiacuritiba.com.br">Dentista Curitiba</a> experiente é um excelente ponto de partida para iniciar essa jornada e tirar todas as dúvidas sobre as possibilidades do tratamento.</p>
+
+<h2>Principais tipos de aparelhos ortodônticos para adultos</h2>
+
+<p>Atualmente, adultos contam com diversas opções de aparelhos ortodônticos que se adaptam à rotina e à estética. Além do tradicional aparelho metálico, há modelos estéticos feitos de porcelana ou safira, que passam mais despercebidos.<br><br>Os alinhadores invisíveis ganharam popularidade pela discrição, facilidade na higiene e conforto. Há ainda sistemas autoligados, com menos atrito e consultas mais espaçadas ao dentista. Cada tecnologia tem suas particularidades e níveis de indicação, variando conforme as necessidades do paciente. Por isso, é fundamental conversar com um ortodontista qualificado para escolher a alternativa que melhor se encaixe em seu estilo de vida, objetivos e orçamento.</p>
+
+
+<div class="content-inline-related">
+  <span class="content-inline-related-label">Veja mais:</span>
+  <a href="https://ablac.com.br/brasilia-referencia-odontologia/" class="content-inline-related-link">Brasília é referência em odontologia? Descubra os diferenciais locais</a>
+</div>
+
+<h2>Dúvidas comuns sobre a duração do tratamento ortodôntico</h2>
+
+<p>Uma das perguntas mais frequentes de adultos interessados em ortodontia é sobre quanto tempo o tratamento irá durar. Em geral, depende da complexidade do caso, da escolha do tipo de aparelho e do comprometimento com as recomendações do ortodontista.<br><br>Tratamentos mais simples podem ser concluídos em cerca de 12 a 18 meses, enquanto situações mais complexas podem exigir dois anos ou mais. É importante lembrar que cada sorriso tem suas particularidades e o planejamento é sempre individualizado. Cumprir as consultas regulares, seguir os cuidados diários e evitar maus hábitos contribuem para um resultado eficiente em menos tempo.</p>
+
+<h2>Cuidados essenciais durante o tratamento ortodôntico em adultos</h2>
+
+<p>Manter uma boa higiene bucal é ainda mais importante durante o uso de aparelhos ortodônticos. Os adultos devem investir em escovas interdentais, fio dental especial e enxaguantes recomendados pelo ortodontista.<br><br>Além disso, é crucial evitar alimentos muito duros ou pegajosos, que podem danificar os acessórios ortodônticos. Consultas regulares garantem o monitoramento do progresso e ajustes necessários. Dores leves são comuns nos primeiros dias após a ativação do aparelho, mas são temporárias. Adotar um compromisso com a saúde bucal faz toda a diferença para evitar cáries, problemas na gengiva e garantir um tratamento mais rápido e confortável.</p>
+
+
+<div class="content-inline-related">
+  <span class="content-inline-related-label">Veja mais:</span>
+  <a href="https://ablac.com.br/consultas-nutricionais-como-escolher-sp/" class="content-inline-related-link">Consultas médicas com foco nutricional: como escolher o profissional certo em SP</a>
+</div>
+
+<h2>Benefícios da ortodontia para a saúde e autoestima dos adultos</h2>
+
+<p>Alinhar os dentes na idade adulta proporciona ganhos que vão além da estética. Uma arcada dentária bem posicionada facilita a higienização, ajuda na prevenção de doenças periodontais e reduz o risco de perdas precoces de dentes.<br><br>Além do aspecto funcional, o impacto positivo na autoestima é nítido: um sorriso alinhado transmite confiança e segurança em ambientes profissionais e sociais. O tratamento ortodôntico também pode ser um marco importante de autocuidado, refletindo em mais bem-estar e disposição para sorrir. Considerar todas essas vantagens pode motivar a busca por orientação e cuidado especializado a qualquer fase da vida.</p>
+
+<h2>Conclusão</h2>
+
+<p>Optar pela ortodontia na vida adulta é uma escolha segura e transformadora tanto para a saúde quanto para a autoestima. Ao conhecer as alternativas de aparelhos, entender a duração do tratamento e adotar os cuidados necessários, fica mais fácil encarar essa decisão com tranquilidade e confiança.<br><br>Se você se identificou com as dúvidas apresentadas ou já está considerando investir no seu sorriso, lembre-se de buscar um profissional qualificado. Assim, é possível garantir resultados eficazes e um processo mais confortável, independentemente da idade. Investir nesse autocuidado é, sem dúvida, um passo valioso para viver melhor.</p>
+          </div>
+
+          <div class="post-footer">
+            Última atualização: 4/9/2026
+          </div>
+
+          <section class="post-bottom">
+            <h2 class="section-title">Mais conteúdos para você</h2>
+            <div id="bottom-featured-posts">
+              <p class="loading-text">Carregando conteúdos...</p>
+            </div>
+          </section>
+        </article>
+
+        <aside class="post-sidebar">
+          <div class="sidebar-block">
+            <h2 class="section-title">Posts recentes</h2>
+            <div id="recent-posts">
+              <p class="loading-text">Carregando posts recentes...</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-tuasaude">
+      <div class="container footer-wrapper">
+        <a href="/" class="footer-logo">
+          <img src="/img/logo-blog.webp" alt="ABLAC" class="footer-logo__image">
+        </a>
+        <div class="footer-text">
+          Conteúdos informativos, atualizados e organizados para facilitar sua navegação e ajudar na busca por informação.
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="/sobre/">Sobre</a></li>
+            <li><a href="/contato/">Contato</a></li>
+            <li><a href="/politica-de-privacidade/">Política de privacidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-group">
+          <div class="footer-update-copy">
+            <span>© 2026 ABLAC</span>
+            <span class="dot"></span>
+            <span>Todos os direitos reservados</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    async function fetchJson(path) {
+      const response = await fetch(path, { cache: 'no-cache' });
+      if (!response.ok) throw new Error('Erro ao carregar ' + path);
+      return response.json();
+    }
+
+    function escapeHtml(str) {
+      return String(str ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function normalizePath(url) {
+      try {
+        const parsed = new URL(url, window.location.origin);
+        return parsed.pathname.replace(/\/+$/, '') || '/';
+      } catch {
+        return String(url || '')
+          .replace(window.location.origin, '')
+          .replace(/\/+$/, '') || '/';
+      }
+    }
+
+    function renderRecentPosts(posts) {
+      const container = document.getElementById('recent-posts');
+      if (!container) return;
+      if (!posts.length) {
+        container.innerHTML = '<p class="empty-text">Nenhum post recente encontrado.</p>';
+        return;
+      }
+      container.innerHTML = `
+        <ul class="sidebar-list">
+          ${posts.map(post => `
+            <li class="sidebar-item">
+              <a href="${escapeHtml(post.url)}" class="sidebar-link">${escapeHtml(post.title)}</a>
+              <span class="sidebar-meta">${escapeHtml(post.date || '')}${post.category ? ' • ' + escapeHtml(post.category) : ''}</span>
+            </li>
+          `).join('')}
+        </ul>
+      `;
+    }
+
+    function renderBottomFeatured(posts) {
+      const container = document.getElementById('bottom-featured-posts');
+      if (!container) return;
+      if (!posts.length) {
+        container.innerHTML = '<p class="empty-text">Nenhum conteúdo adicional encontrado.</p>';
+        return;
+      }
+      container.innerHTML = `
+        <ul class="bottom-list">
+          ${posts.map(post => `
+            <li class="bottom-item">
+              <a href="${escapeHtml(post.url)}" class="bottom-link">${escapeHtml(post.title)}</a>
+              <span class="bottom-meta">${escapeHtml(post.date || '')}${post.category ? ' • ' + escapeHtml(post.category) : ''}</span>
+            </li>
+          `).join('')}
+        </ul>
+      `;
+    }
+
+    async function loadDynamicPostWidgets() {
+      try {
+        const currentPath = normalizePath(window.location.pathname);
+        const [recentPostsRaw, featuredPostsRaw] = await Promise.all([
+          fetchJson('/data/recent-posts.json'),
+          fetchJson('/data/featured-posts.json')
+        ]);
+        const recentPosts = Array.isArray(recentPostsRaw) ? recentPostsRaw : [];
+        const featuredPosts = Array.isArray(featuredPostsRaw) ? featuredPostsRaw : [];
+        const filteredRecent = recentPosts.filter(post => normalizePath(post.url) !== currentPath).slice(0, 6);
+        const bottomFeatured = featuredPosts.filter(post => normalizePath(post.url) !== currentPath).slice(0, 12);
+        renderRecentPosts(filteredRecent);
+        renderBottomFeatured(bottomFeatured);
+      } catch (error) {
+        console.error(error);
+        const recentEl = document.getElementById('recent-posts');
+        const bottomEl = document.getElementById('bottom-featured-posts');
+        if (recentEl) recentEl.innerHTML = '<p class="empty-text">Não foi possível carregar os posts recentes.</p>';
+        if (bottomEl) bottomEl.innerHTML = '<p class="empty-text">Não foi possível carregar os conteúdos relacionados.</p>';
+      }
+    }
+
+    loadDynamicPostWidgets();
+  </script>
+</body>
+</html>
